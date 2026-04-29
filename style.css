@@ -94,7 +94,7 @@ header {
   .img-one {
     margin-top: 150px;
     height:100%;
-    width: 700px;
+    width:100%; 
     display: flex;
     justify-content: center;
     align-items: center;
