@@ -39,11 +39,12 @@ header {
   gap: 30px;
   margin: 0;
   padding: 0;
+  cursor: pointer;
 }
 .nav-links a:hover {
   color: #A085FF; /* Your brand's lavender color */
   transition: 0.3s;
-  transform: scale(1.5);
+  transform: scale(1.2);
 }
 
 .nav-links li a {
@@ -51,24 +52,68 @@ header {
   text-decoration: none;
   font-family: "Michroma", sans-serif;
   font-size: 18px;
+  display: inline-block;
+  transition: all 0.3s ease;
 }
 
 .menu-icon, #menu-toggle {
   display: none; 
 }
 
+/* this is for the main content section */
+.let-begin {
+  margin-top: 20px;
+  padding: 10px 48px 10px 48px;
+  font-family: "Michroma", sans-serif;
+  background-color: #A085FF; /* Lavender color */
+  color: #F8F9FA; /* Light text color */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.one-content{
+  position: relative;
+}
+.one-content .let-begin {
+  position: absolute;
+  top: 55.5%;
+  left: 52.9%;
+  zoom: 170%;
+}
+.profile {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.profile:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+/* Android View */
 @media (max-width: 768px) {
+  /* .nav-links {
+   z-index: 10;
+  } */
   .nav-links {
-    display: none; 
+    display: none;
     flex-direction: column;
-    width: 100%;
     position: absolute;
-    top: 100px; /* Starts exactly where header ends */
+    top: 100px; /* Height of your header */
     left: 0;
-    background: #15131a; /* Slightly lighter black for contrast */
-    padding: 20px 0;
+    width: 100%;
+    background-color: #0B0A0D;
+    padding: 20px;
     text-align: center;
-    z-index: 10;
   }
 
   .nav-links li {
@@ -94,11 +139,27 @@ header {
   .img-one {
     margin-top: 150px;
     height:100%;
-    width:100%; 
+    width:90%; 
     display: flex;
     justify-content: center;
     align-items: center;
   }
+  .one-content {
+    position: relative; 
+    display: inline-block; /* Or block, depending on your layout */
+  }
+  .one-content .let-begin {
+  position: absolute;
+  top: 55%; 
+  left: 60%;
+  margin-top: 48.5px;
+  margin-left: -33px;
+  height: 20px;
+  width: 90px;
+  font-size: 10px;
+  padding: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  }
 }
-
-/* this is for the main content section */
