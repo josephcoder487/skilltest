@@ -29,3 +29,164 @@ body {
   margin: 0;
   padding-top: 100px; 
 }
+.logo {
+  height: 80px; /* Adjusted to fit header better */
+  width: auto;  /* Auto width prevents stretching */
+  display: flex;
+  align-items: center;
+}
+/* Desktop Navigation */
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  align-items: center;
+}
+.nav-links li a {
+  color: #F8F9FA;
+  text-decoration: none;
+  font-family: "Michroma", sans-serif;
+  font-size: 18px;
+  display: inline-block;
+  transition: all 0.3s ease;
+  z-index: 1001;
+}
+.nav-links li a:hover {
+  color: #A085FF; /* Your brand's lavender color */
+  transform: scale(1.05);
+}
+
+
+.menu-icon, #menu-toggle {
+  display: none; 
+}
+.profile {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+}
+.profile:hover {
+  transform: scale(1.5);
+  transition: 0.3s;
+}
+.login-form{
+    margin-top: 10%;
+    background:linear-gradient(
+    90deg,
+    #6C5CE7 0%,
+    #8B7CF6 40%,
+    #A29BFE 100%
+  );
+    height: 500px;
+    width: 400px;
+    border-radius: 20px;
+    border: 2px solid #6C5CE7;
+}
+.login-form h2{
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  letter-spacing: 2%;
+  font-size: larger;
+  /* text-align: left; */
+  /* margin-left: 3%; */
+}
+.login-form input{
+  width: 80%;
+  height: 40px;
+  margin-left: 0%;
+  margin-top: 5%;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+.login-form input:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.login-form button{
+  width: 80%;
+  height: 40px;
+  margin-left: 0%;
+  margin-top: 5%;
+  border-radius: 10px;
+  border: none;
+  background-color: #6C5CE7;
+  color: white;
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+}
+.login-form button:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
+
+
+
+
+
+
+
+
+.middle-part {
+  height: 500px;
+  width: 100%;
+  margin-top: -5px;
+  
+  background: linear-gradient(
+    90deg,
+    #6C5CE7 0%,
+    #8B7CF6 50%,
+    #A29BFE 100%
+  );
+}
+
+/* Android View */
+@media (max-width: 768px) {
+  /* .nav-links {
+   z-index: 10;
+  } */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 100px; /* Height of your header */
+    left: 0;
+    width: 100%;
+    background-color: #0B0A0D;
+    padding: 20px;
+    text-align: center;
+    z-index: 10; /* Ensure it appears above other content */
+  }
+
+  .nav-links li {
+    padding: 15px 0;
+  }
+
+  .menu-icon {
+    display: block; 
+    font-size: 30px; /* Size for the ||| emoji */
+    font-weight: bold;
+    color: #A085FF; 
+    cursor: pointer;
+    transform: rotate(90deg);
+    user-select: none;
+    rotate: 90deg;
+    letter-spacing: 2px;
+  }
+  #menu-toggle:checked ~ .nav-links {
+  display: flex ;
+}
+}
+footer {
+  background-color: #0B0A0D;
+  color: #F8F9FA;
+  text-align: center;
+  padding: 20px 0;
+  width: 100%;
+  bottom: 0;
+}
