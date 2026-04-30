@@ -84,6 +84,120 @@ body {
     #A29BFE 100%
   );
 }
+.greet h1{
+    font-family: "Sekuya", system-ui;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 5%;
+}
+.greet .highlights {
+    color: #A085FF;
+}
+.greet .highlight{
+    color: #5e4886;
+}
+.greet h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    text-align: left;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+.boxes {
+    display: flex;
+}
+.boxes .box{
+    height: 250px;
+    width: 420px;
+    background-color: #0B0A0D;
+    display: inline-block;
+    margin: 20px;
+    margin-top: 50px;
+    border-radius: 10px;
+    color: #F8F9FA;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;     
+}
+/* .box button{
+    position: absolute;
+} */
+/* .arrow{
+    height: 1px;
+    width: 1px;
+} */
+.boxes #box{
+    margin-left: 10%;
+}
+.box img{
+    height: 250px;
+    width: 420px;
+    will-change: transform;
+    transition: transform 0.3s smooth, box-shadow 0.3s ease;
+}
+.box:hover{
+    transform: scale(1.08);
+    box-shadow: 0 10px 25px #A085FF;
+}
+
+/* this is for thwe options box */
+.container-options{
+    margin-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.option{
+    height: 200px;
+    width: 300px;
+    background-color: #6C5CE7;
+    margin: 20px;
+    transition: transform 0.3s ease;
+}
+.option h1{
+    padding: 10px;
+    font-family: "Sekuya", system-ui;
+    color: #F8F9FA;
+    font-size: x-large;
+}
+.option:hover{
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* Android View */
 @media (max-width: 768px) {
@@ -121,7 +235,20 @@ body {
   #menu-toggle:checked ~ .nav-links {
   display: flex ;
 }
+.boxes {
+    display: inline-block;
 }
+.boxes #box{
+    margin-left: 4%
+}
+
+/* cs page */
+.container-options{
+    display: inline-block;
+}
+}
+
+/* ithu last part uh */
 footer {
   background-color: #0B0A0D;
   color: #F8F9FA;
