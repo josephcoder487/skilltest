@@ -1,3 +1,10 @@
+/* ithu colour grad uh ku easy yaa irukkum */
+:root {
+  --primary-purple: #6C5CE7;
+  --light-purple: #A29BFE;
+  --mid-purple: #8B7CF6;
+  --bg-purple: #5A4BD9;
+}
 .sekuya-regular {
   font-family: "Sekuya", system-ui;
   font-weight: 400;
@@ -9,7 +16,7 @@
   font-style: normal;
 }
 
-/* Header Adjustments */
+/* Header */
 header {
 
   background-color: #0B0A0D;
@@ -19,12 +26,16 @@ header {
   justify-content: space-between; /* This pushes logo left and menu right */
   align-items: center;
   padding: 0 30px; 
-  position: absolute;
+  position: fixed;
   left: 0%;
   top: 0%;
   box-sizing: border-box;
+  z-index: 1000; /* Ensure header is above other content */
 }
-
+body {
+  margin: 0;
+  padding-top: 100px; 
+}
 .logo {
   height: 80px; /* Adjusted to fit header better */
   width: auto;  /* Auto width prevents stretching */
@@ -40,13 +51,8 @@ header {
   margin: 0;
   padding: 0;
   cursor: pointer;
+  align-items: center;
 }
-.nav-links a:hover {
-  color: #A085FF; /* Your brand's lavender color */
-  transition: 0.3s;
-  transform: scale(1.2);
-}
-
 .nav-links li a {
   color: #F8F9FA;
   text-decoration: none;
@@ -54,7 +60,13 @@ header {
   font-size: 18px;
   display: inline-block;
   transition: all 0.3s ease;
+  z-index: 1001;
 }
+.nav-links li a:hover {
+  color: #A085FF; /* Your brand's lavender color */
+  transform: scale(1.05);
+}
+
 
 .menu-icon, #menu-toggle {
   display: none; 
@@ -71,6 +83,10 @@ header {
   border-radius: 10px;
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
+}
+.let-begin:hover {
+  background-color: #8B7CF6; /* Slightly darker lavender on hover */
+  transform: scale(1.05);
 }
 .one-content{
   position: relative;
@@ -89,6 +105,34 @@ header {
 .profile:hover {
   transform: scale(1.5);
   transition: 0.3s;
+}
+.after-main-part .text-one {
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 36px;
+}
+.after-main-part p {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  margin-top: 10px;
+}
+.text-one .highlight {
+  color: #A085FF; /* Lavender color */
+}
+.middle-part {
+  height: 500px;
+  width: 100%;
+  margin-top: -5px;
+  
+  background: linear-gradient(
+    90deg,
+    #6C5CE7 0%,
+    #8B7CF6 50%,
+    #A29BFE 100%
+  );
 }
 
 
@@ -114,6 +158,7 @@ header {
     background-color: #0B0A0D;
     padding: 20px;
     text-align: center;
+    z-index: 10; /* Ensure it appears above other content */
   }
 
   .nav-links li {
@@ -126,19 +171,17 @@ header {
     font-weight: bold;
     color: #A085FF; 
     cursor: pointer;
+    transform: rotate(90deg);
     user-select: none;
     rotate: 90deg;
     letter-spacing: 2px;
   }
 
-  /* Show menu when checkbox is checked */
-  #menu-toggle:checked ~ .nav-links {
-    display: flex;
-  }
-
+  
   .img-one {
-    margin-top: 150px;
-    height:100%;
+    /* itha nalla paaru mt - 150px, 100% - height */
+    margin-top: 50px;
+    height:auto;
     width:90%; 
     display: flex;
     justify-content: center;
@@ -150,16 +193,29 @@ header {
   }
   .one-content .let-begin {
   position: absolute;
-  top: 55%; 
-  left: 60%;
+  /* top: 55%; 
+  left: 60%; */
+  top: 55.5%;
+  left: 68%;
+  transform: translate(-50%, -50%);
   margin-top: 48.5px;
   margin-left: -33px;
-  height: 20px;
-  width: 90px;
+    /* height: 20px;
+    width: 90px; */
+  width : 140px;
+  height : 30px;
   font-size: 10px;
   padding: 0; 
   display: flex;
   align-items: center;
   justify-content: center;
+  zoom: 100%;
   }
+  /* Show menu when checkbox is checked */
+  #menu-toggle:checked ~ .nav-links {
+  display: flex ;
+}
+/* #menu-toggle:checked ~ .nav-links {
+  display: flex;
+} */
 }

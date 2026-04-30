@@ -1,0 +1,31 @@
+.sekuya-regular {
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Header */
+header {
+
+  background-color: #0B0A0D;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* This pushes logo left and menu right */
+  align-items: center;
+  padding: 0 30px; 
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  box-sizing: border-box;
+  z-index: 1000; /* Ensure header is above other content */
+}
+body {
+  margin: 0;
+  padding-top: 100px; 
+}
