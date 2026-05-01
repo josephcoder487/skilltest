@@ -93,6 +93,15 @@ body {
   /* text-align: left; */
   /* margin-left: 3%; */
 }
+.login-form h3{
+  font-weight: 400;
+  letter-spacing: 2%;
+  transition: transform 0.3s ease;
+
+}
+.login-form h3:hover{
+  transform: scale(1.3);
+}
 .login-form input{
   width: 80%;
   height: 40px;
@@ -122,6 +131,85 @@ body {
   transform: scale(1.05);
   transition: 0.3s;
 }
+
+
+
+
+
+
+
+/* popup thu ithu */
+#popupoverlay{
+  /* background-color: black;
+  opacity: 0.8; */
+  background-color: rgba(0,0,0,0.8);
+    position: absolute;
+    height: 200%;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    bottom: 0%;
+    display: none;
+    z-index: 1;
+  }
+  #popup{
+    background:linear-gradient(
+    90deg,
+    #6C5CE7 0%,
+    #8B7CF6 40%,
+    #A29BFE 100%
+  );
+    height: 500px;
+      width: 400px;
+      border-radius: 20px;
+      border: 2px solid #6C5CE7;
+      z-index: 2;
+      margin-top: 270px;
+      display: none;
+      
+  }
+.popup h2{
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+  letter-spacing: 2%;
+  font-size: larger;
+  /* text-align: left; */
+  /* margin-left: 3%; */
+}
+.popup input{
+  width: 80%;
+  height: 40px;
+  margin-left: 0%;
+  margin-top: 5%;
+  border-radius: 10px;
+  border: none;
+  padding-left: 10px;
+}
+.popup input:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+.popup button{
+  width: 80%;
+  height: 40px;
+  margin-left: 0%;
+  margin-top: 5%;
+  border-radius: 10px;
+  border: none;
+  background-color: #6C5CE7;
+  color: white;
+  font-family: "Sekuya", system-ui;
+  font-weight: 400;
+}
+.popup button:hover{
+  transform: scale(1.05);
+  transition: 0.3s;
+}
+
+
+
+
+
 
 
 
