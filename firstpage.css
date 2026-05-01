@@ -149,18 +149,22 @@ body {
     flex-wrap: wrap;
 }
 .option{
-    height: 200px;
-    width: 300px;
+    height: 400px;
+    width: 350px;
     background-color: #6C5CE7;
     margin: 20px;
     transition: transform 0.3s ease;
 }
-.option h1{
+/* .option h1{
     padding: 10px;
     font-family: "Sekuya", system-ui;
     color: #F8F9FA;
     font-size: x-large;
-}
+} */
+ .option img{
+  height: 400px;
+  width: 350px;
+ }
 .option:hover{
     transform: scale(1.1);
 }

@@ -31,15 +31,16 @@
 
 <center><section>
     <div class="login-form">
-        <form action="">
+        <form action="/signup" method="POST" id="signupform">
             <h2>Sign Up</h2>
-            <input type="text" placeholder="Username" required><br>
-            <input type="email" placeholder="Email" required><br>
-            <input type="password" placeholder="Password" required><br>
-            <input type="password" placeholder="Confirm Password" required><br>
+            <input type="text" name="username" placeholder="Username" id="username" required><br>
+            <input type="email" name="email" placeholder="Email" id="email"><br>
+            <input type="password" name="password" placeholder="Password" id="pword"><br>
+            <input type="password" name="confirmpassword" placeholder="Confirm password" id="pword1"><br>
             <button type="submit">Sign Up</button>
             <button type="reset">Reset</button>
         </form>
+        <script src="signup.js"></script>
 
     </div>
 </section></center>
