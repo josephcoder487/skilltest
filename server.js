@@ -18,14 +18,6 @@ mongoose.connect("mongodb://admin:admin123@ac-k2msfxp-shard-00-00.h2p6bjb.mongod
 app.use(express.json());
 app.use(cors());
 
-// mongoose.connect("mongodb://127.0.0.1:27017/skilltest")
-// .then(() => {
-//     console.log("MongoDB Connected");
-// })
-// .catch((err) => {
-//     console.log(err);
-// });
-
 const User = mongoose.model("User", {
     username: String,
     email: String,

@@ -36,7 +36,7 @@ form.addEventListener("submit", async (e) => {
     }
 
     const response = await fetch(
-        "http://localhost:3000/signup",
+        "https://skilltest-ly61.onrender.com/signup",
         {
             method: "POST",
 
@@ -72,7 +72,7 @@ loginbtn.addEventListener("click", async () => {
     const password =
         document.querySelector(".pword").value;
 
-    const response = await fetch("http://localhost:3000/login", {
+    const response = await fetch("https://skilltest-ly61.onrender.com/login", {
 
         method: "POST",
 
