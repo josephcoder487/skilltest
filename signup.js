@@ -35,8 +35,7 @@ form.addEventListener("submit", async (e) => {
         return;
     }
 
-    const response = await fetch(
-        "https://skilltest-ly61.onrender.com/signup",
+    const response = await fetch("https://your-render-url.onrender.com/signup"),
         {
             method: "POST",
 
@@ -72,7 +71,7 @@ loginbtn.addEventListener("click", async () => {
     const password =
         document.querySelector(".pword").value;
 
-    const response = await fetch("https://skilltest-ly61.onrender.com/login", {
+    const response = await fetch("https://your-render-url.onrender.com/signup"), {
 
         method: "POST",
 
