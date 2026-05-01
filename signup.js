@@ -71,7 +71,7 @@ loginbtn.addEventListener("click", async () => {
     const password =
         document.querySelector(".pword").value;
 
-    const response = await fetch("https://skilltest-1.onrender.com/signup", {
+    const response = await fetch("https://skilltest-1.onrender.com/login", {
 
         method: "POST",
 
