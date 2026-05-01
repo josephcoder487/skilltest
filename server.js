@@ -5,16 +5,26 @@ const cors = require("cors");
 
 const app = express();
 
-app.use(express.json());
-app.use(cors());
-
-mongoose.connect("mongodb://127.0.0.1:27017/skilltest")
+// mango db atlas = for worldwide use
+mongoose.connect("mongodb://admin:admin123@ac-k2msfxp-shard-00-00.h2p6bjb.mongodb.net:27017,ac-k2msfxp-shard-00-01.h2p6bjb.mongodb.net:27017,ac-k2msfxp-shard-00-02.h2p6bjb.mongodb.net:27017/?ssl=true&replicaSet=atlas-3rybir-shard-0&authSource=admin&appName=test1")
 .then(() => {
     console.log("MongoDB Connected");
 })
 .catch((err) => {
     console.log(err);
 });
+
+
+app.use(express.json());
+app.use(cors());
+
+// mongoose.connect("mongodb://127.0.0.1:27017/skilltest")
+// .then(() => {
+//     console.log("MongoDB Connected");
+// })
+// .catch((err) => {
+//     console.log(err);
+// });
 
 const User = mongoose.model("User", {
     username: String,
