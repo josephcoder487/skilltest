@@ -88,9 +88,28 @@ body {
   background-color: #8B7CF6; /* Slightly darker lavender on hover */
   transform: scale(1.05);
 }
+#let-begin{
+  margin-top: 20px;
+  padding: 10px 48px 10px 48px;
+  height: 70px;
+  width: 400px;
+  font-size: 20px;
+  font-family: "Michroma", sans-serif;
+  background-color: #A085FF; /* Lavender color */
+  color: #F8F9FA; /* Light text color */
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+#let-begin:hover {
+  background-color: #8B7CF6; /* Slightly darker lavender on hover */
+  transform: scale(1.05);
+}
 .one-content{
   position: relative;
 }
+
 .one-content .let-begin {
   position: absolute;
   top: 55.5%;
@@ -195,18 +214,18 @@ body {
   position: absolute;
   /* top: 55%; 
   left: 60%; */
-  top: 55.5%;
-  left: 68%;
+  top: 55%;
+  left: 72%;
   transform: translate(-50%, -50%);
   margin-top: 48.5px;
   margin-left: -33px;
     /* height: 20px;
     width: 90px; */
-  width : 140px;
+  width : 120px;
   height : 30px;
   font-size: 10px;
   padding: 0; 
-  display: flex;
+  display: none;
   align-items: center;
   justify-content: center;
   zoom: 100%;

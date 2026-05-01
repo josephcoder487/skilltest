@@ -1,12 +1,3 @@
-
-
-
-
-
-
-
-
-
 var popupoverlay = document.getElementById("popupoverlay");
 var popup = document.getElementById("popup");
 var changelogin = document.getElementById("changelogin")
