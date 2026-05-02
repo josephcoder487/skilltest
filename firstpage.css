@@ -28,6 +28,12 @@ header {
 body {
   margin: 0;
   padding-top: 100px; 
+    /* background: linear-gradient(
+     90deg,
+    #3d309b 0%,
+    #c99696 50%,
+    #3d309b 100%
+  ); */
 }
 .logo {
   height: 80px; /* Adjusted to fit header better */

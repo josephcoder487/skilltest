@@ -9,6 +9,25 @@ changelogin.addEventListener("click", function(){
 console.log(popup);
 });
 
+var submit = document.getElementById("submit");
+var loaderbox = document.getElementById("loader-container");
+var loadergif = document.getElementById("loader-gif");
+var loginn = document.getElementById("loginbtn");
+submit.addEventListener("click", function(){
+    loaderbox.style.display = "block";
+})
+loginn.addEventListener("click", function(){
+        loaderbox.style.display = "block";
+})
+
+function cancel() {
+        loaderbox.style.display = "none";
+}
+function cancell () {
+     popupoverlay.style.display = "none";
+    popup.style.display = "none";
+}
+
 
 
 
@@ -97,3 +116,4 @@ loginbtn.addEventListener("click", async () => {
     }
 
 });
+

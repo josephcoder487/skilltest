@@ -28,6 +28,12 @@ header {
 body {
   margin: 0;
   padding-top: 100px; 
+  background: linear-gradient(
+     90deg,
+    #6C5CE7 0%,
+    #c99696 50%,
+    #ffffff 100%
+  );
 }
 .logo {
   height: 80px; /* Adjusted to fit header better */
@@ -131,6 +137,16 @@ body {
   transform: scale(1.05);
   transition: 0.3s;
 }
+#loader-container{
+  margin-top: -400px;
+  margin-left: 725px;
+  position: absolute;
+  display: none;
+  z-index: 3;
+}
+
+
+
 
 
 
@@ -220,6 +236,7 @@ body {
 
 
 
+
 .middle-part {
   height: 500px;
   width: 100%;
@@ -268,6 +285,10 @@ body {
   }
   #menu-toggle:checked ~ .nav-links {
   display: flex ;
+}
+#loader-container{
+  margin-left: 150px;
+
 }
 }
 footer {

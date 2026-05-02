@@ -34,7 +34,13 @@ header {
 }
 body {
   margin: 0;
-  padding-top: 100px; 
+  padding-top: 100px;
+  background: linear-gradient(
+     90deg,
+    #6C5CE7 0%,
+    #c99696 50%,
+    #ffffff 100%
+  );
 }
 .logo {
   height: 80px; /* Adjusted to fit header better */
@@ -74,7 +80,7 @@ body {
 
 /* this is for the main content section */
 .let-begin {
-  margin-top: 20px;
+  margin-top: 0px;
   padding: 10px 48px 10px 48px;
   font-family: "Michroma", sans-serif;
   background-color: #A085FF; /* Lavender color */
@@ -108,6 +114,12 @@ body {
 }
 .one-content{
   position: relative;
+   /* background: linear-gradient(
+     90deg,
+    #6C5CE7 0%,
+    #c99696 50%,
+    #ffffff 100%
+  ) */
 }
 
 .one-content .let-begin {
@@ -115,6 +127,9 @@ body {
   top: 55.5%;
   left: 52.9%;
   zoom: 170%;
+}
+.img-two{
+  display: none;
 }
 .profile {
   height: 40px;
@@ -124,6 +139,12 @@ body {
 .profile:hover {
   transform: scale(1.5);
   transition: 0.3s;
+}
+.after-main-part{
+  background-color: #5A4BD9;
+  color: #ffffff;
+  height: 400px;
+  position: relative;
 }
 .after-main-part .text-one {
   font-family: "Sekuya", system-ui;
@@ -137,9 +158,16 @@ body {
   font-style: normal;
   font-size: 20px;
   margin-top: 10px;
+  color:blanchedalmond;
 }
 .text-one .highlight {
   color: #A085FF; /* Lavender color */
+}
+
+.wave{
+ margin-top: -17%; 
+ z-index: 3;
+ position: relative;
 }
 .middle-part {
   height: 500px;
@@ -161,12 +189,20 @@ body {
 
 
 
-
 /* Android View */
 @media (max-width: 768px) {
   /* .nav-links {
    z-index: 10;
   } */
+   /* body{
+     background: linear-gradient(to top,
+    #ffffff 0%,
+    #ac8282 25%,
+    #d79d9d 35%,
+    #ecdede 50%,
+    #ffffff 100%
+  );
+   } */
   .nav-links {
     display: none;
     flex-direction: column;
@@ -202,7 +238,17 @@ body {
     margin-top: 50px;
     height:auto;
     width:90%; 
+    /* display: flex; */
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  .img-two{
+     margin-top: 50px;
+    height:auto;
+    width:90%; 
     display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
   }
@@ -237,6 +283,12 @@ body {
 /* #menu-toggle:checked ~ .nav-links {
   display: flex;
 } */
+ .after-main-part{
+  height: 500px;
+ }
+ /* .wave{
+  margin-top: -1%;
+ } */
 }
 footer {
   background-color: #0B0A0D;

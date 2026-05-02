@@ -26,6 +26,7 @@ const User = mongoose.model("User", {
 
 //signup page
 app.post("/signup", async (req, res) => {
+    
 
     try {
 

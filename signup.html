@@ -33,25 +33,32 @@
 <center><section>
     <div class="login-form">
         <form id="signupform">
-            <h2>Sign Up</h2>
+            <h2>Create an account</h2>
             <input type="text" name="username" placeholder="Username" id="username" required><br>
             <input type="email" name="email" placeholder="Email" id="email"><br>
             <input type="password" name="password" placeholder="Password" id="pword"><br>
             <input type="password" name="confirmpassword" placeholder="Confirm password" id="pword1"><br>
-            <button type="submit">Sign Up</button>
+            <button type="submit" onclick="gif()" id="submit">Sign Up</button>
             <button type="reset">Reset</button>
             <h3 id="changelogin">Have an account? Log in</h3>
         </form>
     </div>
+    <div id="loader-container">
+        <img src="cargando.gif" alt="" id="loader-gif">
+        <p style="color: aliceblue; font-size: x-large; margin-left: 180px; margin-top: -200px; cursor: pointer; " onclick="cancel()">X</p>
+    </div>
+    
     <div class="popup-overlay" id="popupoverlay">
         <div class="popup" id="popup">
+            <p style="font-size: x-large; margin-left: 350px; cursor: pointer; " onclick="cancell()">x</p>
             <h2>Log in</h2>
             <input type="text" name="username" placeholder="username" class="username" required><br>
             <input type="password" name="password" placeholder="password" class="pword" required><br>
-        <button type="submit" id="loginbtn" >Login</button>
+        <button type="submit" id="loginbtn" onclick="gif()">Login</button>
         <button type="reset">Reset</button>
         </div>
     </div>
+    <!-- Loader -->
 </section></center>
 
 
