@@ -94,7 +94,8 @@ body {
   background-color: #8B7CF6; /* Slightly darker lavender on hover */
   transform: scale(1.05);
 }
-#let-begin{
+#let-begin2{
+  z-index: 4;
   margin-top: 20px;
   padding: 10px 48px 10px 48px;
   height: 70px;
@@ -108,7 +109,7 @@ body {
   cursor: pointer;
   transition: background-color 0.3s, transform 0.3s;
 }
-#let-begin:hover {
+#let-begin2:hover {
   background-color: #8B7CF6; /* Slightly darker lavender on hover */
   transform: scale(1.05);
 }
@@ -143,8 +144,12 @@ body {
 .after-main-part{
   background-color: #5A4BD9;
   color: #ffffff;
-  height: 400px;
+  height: 500px;
   position: relative;
+  /* z-index: 3; */
+}
+.after-main-part button{
+  z-index: 1000;
 }
 .after-main-part .text-one {
   font-family: "Sekuya", system-ui;
@@ -165,10 +170,12 @@ body {
 }
 
 .wave{
- margin-top: -17%; 
+ margin-top: -15%; 
  z-index: 3;
  position: relative;
+ overflow: hidden;
 }
+
 .middle-part {
   height: 500px;
   width: 100%;
