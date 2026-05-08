@@ -141,6 +141,9 @@ box-shadow:
         transform: translateY(0);
     }
 }
+.opt-box a{
+  text-decoration: none;
+}
 .opt-box h1{
     margin-left: 0px;
     font-family: "Sekuya", system-ui;

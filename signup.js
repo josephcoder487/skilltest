@@ -76,6 +76,7 @@ form.addEventListener("submit", async (e) => {
 
     if(data === "Signup successful"){
         window.location.href = "home.html";
+        localStorage.setItem("username", username);
     }
 });
 
