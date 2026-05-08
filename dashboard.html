@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skill Test</title>
+     <link rel="icon" href="static - images/skilltest_logo1.png">
+    <link rel="stylesheet" href="dashboard.css">
+
+     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Michroma&family=Sekuya&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!--  -->
+    <header>
+    <img src="static - images/skilltest_logo.png" alt="Skill Test Logo" class="logo">
+    
+    <input type="checkbox" id="menu-toggle" style="display:none;">
+    <label for="menu-toggle" class="menu-icon">|||</label>
+    
+    <ul class="nav-links">
+        <li><a href="firstpage.html">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#profile">
+            <img src="static - images/profile.png" alt="Profile Image" class="profile">
+        </a></li>
+    </ul>
+</header>
+
+<center><section class="first-area">
+    <h1>Welcome back,&nbsp;<span id="user-name">Unknown</span></h1>
+
+    <div class="second-area">
+
+    </div>
+    <br>
+    <hr style="width: 90%;">
+</section></center>
+
+
+
+
+
+<center>
+<div>
+    <img src="static - images/skilltest_wave.svg" alt="">
+    <div class="middle-part"></div>
+</div>
+</center>
+<footer>
+    <p>&copy; 2023 Skill Test. All rights reserved.</p>
+</footer>
+<script src="signup.js" lang="javascript"></script>
+<script>
+    const username = localStorage.getItem("username");
+
+if(username){
+
+    document.getElementById("user-name").textContent = username;
+
+}
+</script>
+</body>
+</html>

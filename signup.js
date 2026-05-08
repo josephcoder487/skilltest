@@ -75,7 +75,7 @@ form.addEventListener("submit", async (e) => {
     alert(data);
 
     if(data === "Signup successful"){
-        window.location.href = "firstpage.html";
+        window.location.href = "home.html";
     }
 });
 
@@ -111,8 +111,8 @@ loginbtn.addEventListener("click", async () => {
 
     if(data === "Login successful"){
 
-        window.location.href = "firstpage.html";
-
+        window.location.href = "dashboard.html";
+        localStorage.setItem("username", username); 
     }
 
 });
