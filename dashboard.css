@@ -268,15 +268,17 @@ body {
 /* flex-direction: column; */
 }
 .second-area{
-  height: 700px;
+  height: 100%;
 }
 
 
 
 
 
-
 .sa-container1{
+ display: none;
+}
+.sa-container2{
   display: inline-block;
   /* display: list-item; */
   position: relative;
@@ -285,6 +287,9 @@ body {
 }
 .sa-box1{
   margin-left: 0px;
+}
+#sa-box2{
+  margin-bottom: 10%;
 }
 }
 
