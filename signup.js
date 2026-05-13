@@ -75,7 +75,7 @@ form.addEventListener("submit", async (e) => {
     alert(data);
 
     if(data === "Signup successful"){
-        window.location.href = "home.html";
+        window.location.href = "domain.html";
         localStorage.setItem("username", username);
     }
 });
@@ -112,7 +112,7 @@ loginbtn.addEventListener("click", async () => {
 
     if(data === "Login successful"){
 
-        window.location.href = "dashboard.html";
+        window.location.href = "home.html";
         localStorage.setItem("username", username); 
     }
 

@@ -301,7 +301,7 @@ animation: slideFadeUp 1s ease;
     padding: 15px 0;
   }
 
-  .menu-icon {
+    .menu-icon {
     display: block; 
     font-size: 30px; /* Size for the ||| emoji */
     font-weight: bold;
@@ -309,15 +309,34 @@ animation: slideFadeUp 1s ease;
     cursor: pointer;
     transform: rotate(90deg);
     user-select: none;
-    rotate: 90deg;
     letter-spacing: 2px;
+    position: fixed;
+    right: 6%;
   }
   #menu-toggle:checked ~ .nav-links {
   display: flex ;
 }
 #loader-container{
-  margin-left: 160px;
-
+  margin-left: 100px;
+}
+.login-form{
+  height: 400px;
+  width: 300px;
+}
+.login-form h2{
+  font-size: medium;
+}
+.space-adjust{
+    height: 100px;
+    width: 100%;
+  }
+#popup{
+  height: 400px;
+  width: 300px;
+}
+#changelogin {
+  margin-top: 9%;
+  color: white;
 }
 }
 footer {

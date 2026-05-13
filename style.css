@@ -282,14 +282,26 @@ body {
   margin-left: -33px;
     /* height: 20px;
     width: 90px; */
-  width : 120px;
+  width : 90px;
   height : 30px;
   font-size: 10px;
   padding: 0; 
   display: none;
   align-items: center;
   justify-content: center;
-  zoom: 100%;
+  zoom: 10%;
+  }
+  .menu-icon {
+    display: block; 
+    font-size: 30px; /* Size for the ||| emoji */
+    font-weight: bold;
+    color: #A085FF; 
+    cursor: pointer;
+    transform: rotate(90deg);
+    user-select: none;
+    letter-spacing: 2px;
+    position: fixed;
+    right: 6%;
   }
   /* Show menu when checkbox is checked */
   #menu-toggle:checked ~ .nav-links {
@@ -299,7 +311,7 @@ body {
   display: flex;
 } */
  .after-main-part{
-  height: 500px;
+  height: 600px;
  }
  /* .wave{
   margin-top: -1%;
