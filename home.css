@@ -103,6 +103,12 @@ body {
     #A29BFE 100%
   );
 }
+
+/* ==================================== */
+/* ==========  firstpage  ============= */
+
+
+
 .pbox{
   font-family: "Michroma", sans-serif;
   background-color: #34145c;
@@ -263,9 +269,6 @@ body {
   height: 90px;
   width: auto;
 }
-
-
-
 #cb-3 button, #cb-4 button{
   position: relative;
   margin-left: -40%;
@@ -298,6 +301,114 @@ body {
 .at { color: #38bdf8; }
 
 
+/* ========================================== */
+/* ========================================== */
+section.firstpage{
+  display: block;
+}
+section.fullstack{
+  height: 1500px;
+  width: 100%;
+  margin-top: -5px;
+  background: transparent;
+  display: none;
+}
+
+
+
+
+
+
+
+/* ======================================== */
+/* ============   fullstack   ============= */
+.back1 img{
+  cursor: pointer;
+  height: 50px;
+  width: auto;
+  margin-top: 12px;
+  margin-left: 5px;
+}
+.back1 {
+  height: 70px;
+  width: 70px;
+  margin-top: 0%;
+  margin-left: 1.5%;
+  border-radius: 50%;
+  background-color: #5f3dc4;
+  position: fixed;
+}
+.question-bank{
+  height: 550px;
+  width: 500px;
+  background-color: #34145c;
+  color: #F8F9FA;
+  border-radius: 20px;
+  border: 2px solid #A085FF;
+  margin-top: 10%;
+  margin-left: 0%;
+  animation: slideFadeUp 1s ease forwards;
+}
+#button-arrow{
+  display: flex;
+}
+#button-arrow h3{
+  color: #A29BFE;
+  font-family: "Michroma", sans-serif;
+  margin-left: 20px;
+  margin-left: 90px;
+}
+#button-arrow button{
+  background-color: #A085FF;
+  color: #34145c;
+  border: none;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  font-weight: bolder;
+  padding: 10px 20px;
+  font-family: "Michroma", sans-serif;
+  font-size: 26px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+.timer{
+  color: white;
+  font-family: "Michroma", sans-serif;
+  font-size: 20px;
+  margin-top: 0px;
+}
+.option{
+  width: 80%;
+    border: 2px solid #9b5cff;
+    padding: 15px;
+    border-radius: 15px;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.option:hover{
+    background: #9b5cff;
+    transform: translateX(8px);
+}
+
+.option.selected{
+    background: #b27dff;
+    color: black;
+}
+.next-btn{
+    background-color: #A085FF;
+    color: #34145c;
+    border: none;
+    border-radius: 10px;
+    font-weight: bolder;
+    padding: 10px 20px;
+    font-family: "Michroma", sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    margin-top: 20px;
+}
 
 
 
@@ -316,6 +427,13 @@ body {
 
 
 
+
+
+
+
+
+/* ========================================== */
+/* ========================================== */
 
 
 /* animations */
@@ -352,12 +470,8 @@ body {
 
 
 
-
-
-
-
-
-
+/* =================================== */
+/* =================================== */
 
 
 
@@ -451,7 +565,43 @@ body {
 #cb h1,h2,p{
   zoom: 0.8;
 }
+
+
+/* ==================================== */
+.back1 {
+  height: 70px;
+  width: 70px;
+  margin-top: -30%;
+  margin-left: 1.5%;
+  border-radius: 50%;
+  background-color: #5f3dc4;
+  z-index: 10;
+  
 }
+.question-bank{
+  margin-top: 130px;
+  height: 550px;
+  width: 300px;
+}
+#button-arrow{
+  zoom: 0.8;
+  margin-left: 10px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
   background-color: #0B0A0D;
   color: #F8F9FA;

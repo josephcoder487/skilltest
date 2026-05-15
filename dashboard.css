@@ -105,7 +105,8 @@ body {
 .second-area{
     height: 500px;
     width: 90%;
-    background-color: #5f3dc4;
+    background-color: #34145c;
+    border: 2px solid #A085FF;
     border-radius: 10px;
     animation: slideFadeUp 1s ease;
 }
@@ -113,7 +114,8 @@ body {
   height: 200px;
   width: 90%;
   margin-left: 1%;
-  background-color: #0b0615;
+  background-color: #6b5ba5;
+  border: 2px solid #A085FF;
   border-radius: 10px;
   display: flex;
 }
@@ -122,17 +124,18 @@ body {
   width: 200px;
 }
 .box01 .day-h{
-  color: #5f3dc4;
+  color: white;
   text-align: center;
 }
 .box01 h1{
   text-align: center;
 }
 .box01 h2{
-  color: white;
+  color: #34145c;
   text-align: center;
   font-family: "Michroma", sans-serif;
-  font-size: medium;
+  font-size: 26px;
+  font-weight: bold;
 }
 .sa-container2{
   display: flex;
@@ -156,11 +159,15 @@ body {
   width: 300px;
   height: 200px;
   border-radius: 15px;
-  background-color: #0B0A0D;
+  background-color: #6b5ba5;
+  border: 2px solid #A085FF;
   margin-top: 20px;
   margin-left: 50px;
 }
-.sa-box1 .badge-h{
+.sa-box1 h2{
+  color: #34145c;
+}
+/* .sa-box1 .badge-h{
   color: yellow;
 }
 .sa-box1 .avg-h{
@@ -168,7 +175,7 @@ body {
 }
 .sa-box1 .test-h{
   color: cyan;
-}
+} */
 .sa-box1:hover{
   transform: scale(1.1);
   transition: 0.3s ease ;
