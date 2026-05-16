@@ -142,6 +142,26 @@ body {
 #tabs{
   color: #A29BFE;
 }
+.tab-btns{
+  display: flex;
+}
+.tab-btns button{
+  width: 10%;
+  height: 30px;
+  background-color: #34145c;
+  border: 2px solid #A085FF;
+  color: #A085FF;
+  border-radius: 10px;
+  margin-right: 1%;
+  font-family: cursive;
+}
+.tab-btns button:hover{
+  background-color: #A085FF;
+  color: black;
+  font-weight: bold;
+  transform: scale(1.05);
+  transition: 0.3s;
+}
 .after-part{
   display: none;
   height: 70px;
@@ -235,8 +255,9 @@ body {
 } 
 .snippet-img{
   display: block;
+  /* animation: float 3s ease-in-out infinite; */
 }
-#cb-2{
+#cb-2, #cb-2i {
   margin-left: 0%;
   position: relative;
 }
@@ -287,6 +308,7 @@ body {
   line-height: 1.6;
   color: #c4b5fd;
   backdrop-filter: blur(4px);
+  animation: float 3s ease-in-out infinite;
 
 }
 .code-block.cb1 { right: 250px; top: 52px; width: 170px; }
@@ -300,7 +322,49 @@ body {
 .tag { color: #f472b6; }
 .at { color: #38bdf8; }
 
-
+/* #cb .codex{
+  height: 10px;
+  width: 10px;
+} */
+.codex img{
+  display: none;
+  height: 100px;
+  width: auto;
+}
+/* ========================================== */
+/* this is for commerce and others css */
+#commerce{
+  display: none;
+}
+.card-right svg{
+  margin-top: -15%;
+  margin-left: 70%;
+    width: 100%;
+    max-width: 420px;
+    filter: drop-shadow(0 0 18px rgba(168,85,247,0.25));
+    animation: float 4s ease-in-out infinite;
+    zoom: 0.9;
+}
+#cb-2i img{
+  margin-top: 10px;
+  margin-left: 240px;
+  height: 120px;
+  width: auto;
+}
+#others{
+  display: none;
+}
+.blank-for-others{
+  height: 700px;
+  width: 100%;
+  background-color: transparent;
+}
+.blank-for-others h1{
+  color: #A29BFE;
+  font-family: "Michroma", sans-serif;
+  text-align: center;
+  padding-top: 10%;
+}
 /* ========================================== */
 /* ========================================== */
 section.firstpage{
@@ -467,6 +531,19 @@ section.fullstack{
     text-shadow: 0 0 5px #A085FF, 0 0 10px #A085FF, 0 0 20px #A085FF;
   }
 }
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-8px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
 
 
 
@@ -522,6 +599,19 @@ section.fullstack{
   zoom: 0.8;
 }
 .tabs{
+  display: block;
+}
+.tab-btns{
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+.tab-btns button{
+  width: 30%;
+  height: 40px;
+  margin-top: 10px;
+}
+.tabs li, hr{
   display: none;
 }
 .after-part{
@@ -534,8 +624,26 @@ section.fullstack{
 #cb{
   height: 250px;
 }
+.codex img{
+  position: absolute;
+  display: block;
+  margin-left: 61%;
+}
+#cb-2 img{
+  margin-left: 71%;
+  margin-top: -6%;
+}
 #cb-2 .new{
-  left: -9%;
+  left: -8%;
+  top: -3%;
+}
+ #cb-3 img{
+  margin-left: 71%;
+  margin-top: -20%;
+}
+#cb-4 img{
+  margin-left: 65%;
+  margin-top: -23%;
 }
 #cb h1{
   margin-top: 50px;
@@ -564,6 +672,10 @@ section.fullstack{
 }
 #cb h1,h2,p{
   zoom: 0.8;
+}
+/* ============================= */
+.card-right{
+  display: none;
 }
 
 

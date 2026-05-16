@@ -48,13 +48,21 @@
     <section class="tabs">
         <li><span id="tabs">Browse skill domains</span></li>
         <hr width="95%" style="margin-left: 0px;">
+        <div class="tab-btns">
+            <button id="cs-btn">Computer Science</button><br>
+            <button id="com-btn">Commerce</button><br>
+            <button id="other-btn">Others</button>
+        </div>
     </section>
+
+
     <div class="after-part">
         <br>
         <hr width="80%">    
     </div>
 
-    <section class="course-container">
+    <!-- computer science -->
+    <section class="course-container" id="computerscience">
         
         <div class="course-box" id="cb">
             
@@ -63,18 +71,21 @@
             <br>The most complete skill domain on the platform.</p>
             <h2>72% <span class="sr">- success rate</span></h2>
             <button id="test1">Take Test</button>
-
+            
+            <div class="codex">
+                <img src="static - images/code.png" alt="">
+            </div>
             <div class="snippet-img">
                 <div class="code-block cb1">
-                <div><span class="kw">const</span> <span class="fn">app</span> = <span class="fn">express</span>()</div>
-                <div><span class="fn">app</span>.<span class="fn">get</span>(<span class="str">'/api'</span>, <span class="fn">handler</span>)</div>
+                <div> <span class="kw">const</span> <span class="fn">app</span> = <span class="fn">express</span>()</div>
+                <div> <span class="fn">app</span>.<span class="fn">get</span>(<span class="str">'/api'</span>, <span class="fn">handler</span>)</div>
                 <div><span class="cm">// REST API ✓</span></div>
-                </div>
+                </div >
 
-                <div class="code-block cb2">
+                <div  class="code-block cb2">
                 <div><span class="tag">&lt;div</span> <span class="at">className</span>=<span class="str">"hero"</span><span class="tag">&gt;</span></div>
                 <div>&nbsp;&nbsp;<span class="tag">&lt;Hero</span> <span class="at">data</span>=<span class="str">{data}</span><span class="tag">/&gt;</span></div>
-                <div><span class="tag">&lt;/div&gt;</span></div>
+                <div> <span class="tag">&lt;/div&gt;</span></div>
                 </div>
     
                 <div class="code-block cb3">
@@ -83,6 +94,7 @@
                 <div><span class="cm">-- 8,432 rows returned</span></div>
                 </div>
             </div>
+
         </div>
         
     
@@ -140,6 +152,184 @@
         </div>
         </div>
     </section>
+
+
+    <!-- =============================================== -->
+    <!-- commerce -->
+    <section class="course-container" id="commerce">
+        
+        <div class="course-box" id="cb">
+            
+            <h1>Digital Marketing</h1>
+            <p>SEO • Social Media • Ads • Branding • Analytics • Content Strategy.
+            <br>Master audience growth, campaign optimization, and digital
+             brand building with real-world marketing scenarios.</p>
+            <h2>89% <span class="sr">- success rate</span></h2>
+            <button id="test1">Take Test</button>
+
+           <div class="card-right">
+            <svg width="420" height="260" viewBox="0 0 420 260" fill="none" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+    <linearGradient id="cardGlow" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="100%" stop-color="#EC4899"/>
+    </linearGradient>
+
+    <linearGradient id="graphLine" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#22D3EE"/>
+      <stop offset="100%" stop-color="#A855F7"/>
+    </linearGradient>
+
+    <filter id="blurGlow">
+      <feGaussianBlur stdDeviation="6" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background floating circles -->
+  <circle cx="340" cy="40" r="20" fill="#8B5CF6" opacity="0.18"/>
+  <circle cx="390" cy="90" r="12" fill="#EC4899" opacity="0.25"/>
+  <circle cx="300" cy="210" r="18" fill="#22D3EE" opacity="0.15"/>
+
+  <!-- Main analytics card -->
+  <rect x="40" y="40" width="220" height="120" rx="18"
+        fill="#120726"
+        stroke="url(#cardGlow)"
+        stroke-width="2"/>
+
+  <text x="62" y="72"
+        fill="#D8B4FE"
+        font-size="18"
+        font-family="Arial"
+        font-weight="bold">
+        Campaign Growth
+  </text>
+
+  <text x="62" y="105"
+        fill="#22D3EE"
+        font-size="32"
+        font-family="Arial"
+        font-weight="bold">
+        +128%
+  </text>
+
+  <!-- Graph -->
+  <path d="M65 132
+           C95 122, 110 120, 135 108
+           C160 96, 175 102, 200 82
+           C215 70, 228 66, 240 58"
+        stroke="url(#graphLine)"
+        stroke-width="4"
+        fill="none"
+        stroke-linecap="round"
+        filter="url(#blurGlow)"/>
+
+  <!-- Social media card -->
+  <rect x="240" y="90" width="170" height="90" rx="16"
+        fill="#0F0820"
+        stroke="#8B5CF6"
+        stroke-width="1.5"/>
+
+  <text x="258" y="120"
+        fill="#F472B6"
+        font-size="16"
+        font-family="Arial"
+        font-weight="bold">
+        Instagram Ads
+  </text>
+
+  <text x="258" y="148"
+        fill="#FFFFFF"
+        font-size="15"
+        font-family="Arial">
+        ❤ 12.4K Likes
+  </text>
+
+  <text x="258" y="170"
+        fill="#FFFFFF"
+        font-size="15"
+        font-family="Arial">
+        ↗ Engagement +64%
+  </text>
+
+  <!-- Small floating metric card -->
+  <rect x="110" y="175" width="150" height="58" rx="14"
+        fill="#10061D"
+        stroke="#22D3EE"
+        stroke-width="1.5"/>
+
+  <text x="130" y="202"
+        fill="#D8B4FE"
+        font-size="15"
+        font-family="Arial">
+        Conversion Rate
+  </text>
+
+  <text x="130" y="223"
+        fill="#22D3EE"
+        font-size="24"
+        font-family="Arial"
+        font-weight="bold">
+        8.4%
+  </text>
+
+  <!-- Floating hashtags -->
+  <text x="335" y="45"
+        fill="#A855F7"
+        opacity="0.7"
+        font-size="14"
+        font-family="Arial">
+        #marketing
+  </text>
+
+  <text x="300" y="235"
+        fill="#EC4899"
+        opacity="0.7"
+        font-size="14"
+        font-family="Arial">
+        #growth
+  </text>
+
+</svg>
+           </div>
+        </div>
+        
+    
+        <div class="course-box" id="cb-2i">
+            <div>
+                <h1>Drop <br> shipping</h1>
+                <br>
+                <button>Take Test</button>
+            </div>
+            <div>
+                
+                <img src="static - images/trolly.png" alt="">
+            </div>
+        </div>
+        <div class="course-box" id="cb-3">
+            <div>
+            <h1>Entrepreneur <br>-ship</h1>
+            <br>
+            <button>Take Test</button>
+            </div>
+            <div>
+                <img src="static - images/entre3.png" alt="">
+            </div>
+        </div>
+        
+    </section>
+
+    <!-- =========================================== -->
+    <!-- others -->
+     <section class="course-container" id="others">
+        <div class="blank-for-others">
+                <h1>No more courses available</h1>
+        </div>
+     </section>
 </center>
 
 </section>

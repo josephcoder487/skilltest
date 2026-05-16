@@ -24,3 +24,30 @@ const timer = document.getElementById("timer");
 //         timer.textContent = `Time left: ${timeLeft} seconds`;
 //     }
 // }, 1000);
+
+
+// tabs
+const  csBtn = document.getElementById("cs-btn");
+const comBtn = document.getElementById("com-btn");
+const otherBtn = document.getElementById("other-btn");
+const csSection = document.getElementById("computerscience");
+const comSection = document.getElementById("commerce");
+const otherSection = document.getElementById("others");
+const course = document.querySelector(".course-container");
+
+csBtn.addEventListener("click", () => {
+    csSection.style.display = "flex";
+    comSection.style.display = "none";
+    otherSection.style.display = "none";    
+});
+comBtn.addEventListener("click", () => {
+    csSection.style.display = "none";
+    comSection.style.display = "flex";
+
+    otherSection.style.display = "none";
+});
+otherBtn.addEventListener("click", () => {
+    csSection.style.display = "none";
+    comSection.style.display = "none";
+    otherSection.style.display = "block";
+});
